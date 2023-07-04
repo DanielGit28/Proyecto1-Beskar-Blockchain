@@ -1,7 +1,4 @@
-# Python program to create Blockchain
-
-# For timestamp
-import datetime
+# Project to create a private Blockchain for storing and generating unique ids by dna parameters
 
 # Calculating the hash
 # in order to add digital
@@ -19,8 +16,7 @@ import time
 from flask import Flask, jsonify, request
 import uuid
 import hashlib
-from binascii import hexlify
-import inspect
+
 
 class Block:
     def __init__(self, index, timestamp, previous_hash, data, proof=0):
